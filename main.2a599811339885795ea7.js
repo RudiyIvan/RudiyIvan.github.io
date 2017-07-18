@@ -16294,7 +16294,7 @@ var _logsPage6 = _interopRequireDefault(_logsPage5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-angular.module('logsPage', ['logsList', 'logsChart']).component('logsPage', _logsPage2.default).factory('logsPageProvider', [_logsPage4.default]);
+angular.module('logsPage', ['logsList', 'logsChart']).component('logsPage', _logsPage2.default).factory('logsPageProvider', _logsPage4.default);
 
 /***/ }),
 /* 128 */
@@ -18215,7 +18215,7 @@ var _moment2 = _interopRequireDefault(_moment);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-angular.module('filters', []).filter('duration', [function () {
+angular.module('filters', []).filter('duration', function () {
     return function (input, type) {
         if (input) {
             var duration = _moment2.default.duration(input);
@@ -18226,7 +18226,7 @@ angular.module('filters', []).filter('duration', [function () {
             return duration.hours() + ':' + duration.minutes();
         }
     };
-}]);
+});
 
 /***/ }),
 /* 143 */
@@ -18268,7 +18268,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, ".logs-chart__actions {\r\n    background-color: #f0eff4;\r\n    padding: 1rem;\r\n}\r\n\r\n.logs-chart__container {\r\n    /*overflow-x: auto;*/\r\n    position: relative;\r\n}\r\n\r\n#logs-chart {\r\n    padding-right: 70px;\r\n}\r\n\r\n.logs-chart-total {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    width: 70px;\r\n    text-align: center;\r\n    height: 100%;\r\n}\r\n\r\n.logs-chart-total-head {\r\n    font-family: \"Lucida Grande\", \"Lucida Sans Unicode\", Arial, Helvetica, sans-serif;\r\n    font-size: 16px;\r\n    color: rgb(137, 151, 163);\r\n    background: #d8d8d8;\r\n    height: 34px;\r\n    line-height: 42px;\r\n}\r\n\r\n.logs-chart-total-item {\r\n    color: #000;\r\n    font-family: \"Lucida Grande\", \"Lucida Sans Unicode\", Arial, Helvetica, sans-serif;\r\n    font-size: 15px;\r\n    font-weight: bold;\r\n    box-sizing: border-box;\r\n    border-bottom: 1px solid rgb(230, 230, 230);\r\n    border-left: 1px solid rgb(230, 230, 230);\r\n    background: #f7f7f7;\r\n}\r\n\r\n.logs-chart-total-item:nth-child(2) {\r\n    height: 73px;\r\n    line-height: 73px;\r\n}\r\n\r\n.logs-chart-total-item:nth-child(3) {\r\n    height: 71px;\r\n    line-height: 71px;\r\n}\r\n\r\n.logs-chart-total-item:nth-child(4) {\r\n    height: 72px;\r\n    line-height: 72px;\r\n}\r\n\r\n.logs-chart-total-item:last-child {\r\n    border-bottom: 0;\r\n    height: 70px;\r\n    line-height: 70px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:nth-child(2) {\r\n    height: 43px;\r\n    line-height: 43px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:nth-child(3) {\r\n    height: 41px;\r\n    line-height: 41px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:nth-child(4) {\r\n    height: 42px;\r\n    line-height: 42px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:last-child {\r\n    height: 40px;\r\n    line-height: 40px;\r\n}\r\n", ""]);
+exports.push([module.i, ".logs-chart__actions {\r\n    background-color: #f0eff4;\r\n    padding: 1rem;\r\n}\r\n\r\n.logs-chart__container {\r\n    /*overflow-x: auto;*/\r\n    position: relative;\r\n}\r\n\r\n#logs-chart {\r\n    padding-right: 69px;\r\n}\r\n\r\n.logs-chart-total {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    width: 70px;\r\n    text-align: center;\r\n    height: 100%;\r\n}\r\n\r\n.logs-chart-total-head {\r\n    font-family: \"Lucida Grande\", \"Lucida Sans Unicode\", Arial, Helvetica, sans-serif;\r\n    font-size: 16px;\r\n    color: rgb(137, 151, 163);\r\n    background: #d8d8d8;\r\n    height: 34px;\r\n    line-height: 42px;\r\n}\r\n\r\n.logs-chart-total-item {\r\n    color: #000;\r\n    font-family: \"Lucida Grande\", \"Lucida Sans Unicode\", Arial, Helvetica, sans-serif;\r\n    font-size: 15px;\r\n    font-weight: bold;\r\n    box-sizing: border-box;\r\n    border-bottom: 1px solid rgb(230, 230, 230);\r\n    border-left: 1px solid rgb(230, 230, 230);\r\n    background: #f7f7f7;\r\n}\r\n\r\n.logs-chart-total-item:nth-child(2) {\r\n    height: 73px;\r\n    line-height: 73px;\r\n}\r\n\r\n.logs-chart-total-item:nth-child(3) {\r\n    height: 71px;\r\n    line-height: 71px;\r\n}\r\n\r\n.logs-chart-total-item:nth-child(4) {\r\n    height: 72px;\r\n    line-height: 72px;\r\n}\r\n\r\n.logs-chart-total-item:last-child {\r\n    border-bottom: 0;\r\n    height: 70px;\r\n    line-height: 70px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:nth-child(2) {\r\n    height: 43px;\r\n    line-height: 43px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:nth-child(3) {\r\n    height: 41px;\r\n    line-height: 41px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:nth-child(4) {\r\n    height: 42px;\r\n    line-height: 42px;\r\n}\r\n\r\n.logs-chart__container.sticky .logs-chart-total-item:last-child {\r\n    height: 40px;\r\n    line-height: 40px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -18561,4 +18561,4 @@ exports.push([module.i, "html {\r\n  box-sizing: border-box;\r\n}\r\n\r\n*, *:be
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.561177baa866129102ae.js.map
+//# sourceMappingURL=main.2a599811339885795ea7.js.map
