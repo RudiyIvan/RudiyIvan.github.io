@@ -16879,7 +16879,18 @@ exports.default = function ($scope) {
                 data: (0, _logsChart.logsToRanges)(_this.logs)
             }, {
                 step: 'left',
-                data: (0, _logsChart.selectedLogToRanges)(_this.selected)
+                data: (0, _logsChart.selectedLogToRanges)(_this.selected),
+                point: {
+                    events: {
+                        click: function click() {
+                            var next = _this.logs[_this.logs.indexOf(_this.selected) + 1];
+                            if (next) {
+                                _this.onSelect(next);
+                                $scope.$apply();
+                            }
+                        }
+                    }
+                }
             }]
         });
     };
@@ -17363,7 +17374,11 @@ var logsToRanges = exports.logsToRanges = function logsToRanges(logs) {
         return _extends({
             x: log.startDate,
             y: log.categoryId
-        }, log);
+        }, log, {
+            marker: {
+                enabled: true
+            }
+        });
     });
 };
 
@@ -18565,4 +18580,4 @@ exports.push([module.i, "html {\r\n  box-sizing: border-box;\r\n}\r\n\r\n*, *:be
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.48d2388875aef00e42bd.js.map
+//# sourceMappingURL=main.6a16938792011920a5db.js.map
