@@ -16904,6 +16904,8 @@ exports.default = function ($scope) {
                 height: 200
             }
         });
+
+        chart && chart.reflow();
     };
 
     this.onUnStick = function () {
@@ -16913,6 +16915,8 @@ exports.default = function ($scope) {
                 height: 320
             }
         });
+
+        chart && chart.reflow();
     };
 };
 
@@ -18561,4 +18565,4 @@ exports.push([module.i, "html {\r\n  box-sizing: border-box;\r\n}\r\n\r\n*, *:be
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.2a599811339885795ea7.js.map
+//# sourceMappingURL=main.48d2388875aef00e42bd.js.map
